@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Site</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: hsl(0, 0%, 0%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #df1616;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background-color: #444
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #444;
+            border: 1px solid #7a7979;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #df1616;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    h2{
+        color: #000000;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        color: #fff;
+    }
+    #select{
+        background-color: #000000;
+        color: #f9f9f9;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PauloFilmes.com.br</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Lançamentos</a>
+        <a href="#">Clássicos</a>
+        <a href="#">Gêneros</a>
+    </nav>
+    <main>
+        <div class="card">
+            <img src="thor-loveandthunder.jpg" alt="thor-loveandthunder">
+            <h2>THOR LOVE AND THUNDER</h2>
+            <p>Thor busca por paz, mas seus planos são interrompidos por Gorr, o Carniceiro dos Deuses, um assassino galáctico. Para combater esta ameaça, ele pede que Rei Valquíria, Korg e Jane Foster o ajudem.</p>
+        </div>
+        <div class="card">
+            <img src="barbie-filme.jpeg" alt="barbie-filme">
+            <h2>BARBIE O FILME</h2>
+            <p>Com uma perspicácia única, Ruth Handler observou que havia uma demanda significativa por bonecas com uma personalidade adulta, permitindo às crianças imaginar-se em papéis mais maduros e aspiracionais. Isso levou ao lançamento da lendária boneca Barbie em 1959, nomeada após a filha de Ruth, Barbara.</p>
+        </div>
+        <div class="card">
+            <img src="HOMEM-ARANHA.jpg" alt="homem-aranha">
+            <h2>HOMEM ARANHA - SEM VOLTA PARA CASA</h2>
+            <p>Pela primeira vez na história cinematográfica do Homem-Aranha, nosso herói amigo da vizinhança é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
+        </div>
+        <div class="card">
+            <img src="M3GAN.jpg" alt="M3GAN">
+            <h2>M3GAN</h2>
+            <p>M3GAN é uma maravilha da inteligência artificial, uma boneca realista programada para ser a melhor amiga de uma criança. Uma robótica brilhante dá a sua jovem sobrinha um protótipo M3GAN, mas a máquina logo se torna violenta.</p>
+        </div>
+    </main>
+    <div id="conta-select">
+        <select name="conta-select" id="select" onchange="ver()">
+            <option value="o">CONTA ONLINE</option>
+            <option value="n">CONTA OFFLINE</option>
+        </select>
+    </div>
+    <script>
+        function ver()
+        {        
+            let valor = document.getElementById("select");
+            let a = document.getElementById("select").value;
+            if(a == "o"){
+                valor.style.color="green";
+            } 
+            else{
+                valor.style.color="red";
+            };
+        }
+    </script>
+    <footer>
+        &copy; Feito com ❤️ por Paulo Vicente
+    </footer>
+</body>
+</html>

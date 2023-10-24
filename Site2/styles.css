@@ -1,0 +1,42 @@
+#Pesquisa{
+    display: flex;
+    justify-content: space-between;
+}
+#Descrição{
+width: 60vh;
+background-color: #1a1919;
+color: white;
+}
+
+#Canal{
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+}
+#Conteudo{
+    display: flex;
+
+}
+.Caixa-video{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    margin: 20px 0 0 20px;
+}
+.Video-caixa{
+    width: 150px;
+    height: 100px;
+    background-color: #ccc; 
+}
+.conteiner-lateral{
+    display: flex;
+    flex-direction: column;
+
+
+}
+#Botão-de-Se-inscrever-se{
+    background-color: red;
+}
+.Like{
+    color: white;
+}
